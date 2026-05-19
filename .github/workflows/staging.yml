@@ -1,0 +1,21 @@
+name: Staging Pipeline
+
+on:
+  push:
+    branches:
+      - staging
+
+jobs:
+  staging-build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Validate Code
+        run: |
+          test -f src/frontend/index.html
+          test -f src/frontend/style.css
+
+      - name: Build Docker Image (Staging)
+        run: docker build -t app-staging .

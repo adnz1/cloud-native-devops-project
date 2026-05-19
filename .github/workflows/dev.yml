@@ -1,0 +1,22 @@
+name: Development Pipeline
+
+on:
+  push:
+    branches:
+      - develop
+
+jobs:
+  dev-build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Validate Frontend Files
+        run: |
+          test -f src/frontend/index.html
+          test -f src/frontend/style.css
+
+      - name: Build Docker Image (Dev)
+        run: docker build -t app-dev .
