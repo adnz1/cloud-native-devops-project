@@ -1,0 +1,38 @@
+apiVersion: apps/v1
+kind: Deployment
+
+metadata:
+  name: notification-service
+  namespace: ecommerce-devops
+
+spec:
+  replicas: 1
+
+  strategy:
+    type: RollingUpdate
+
+  selector:
+    matchLabels:
+      app: notification-service
+
+  template:
+    metadata:
+      labels:
+        app: notification-service
+
+    spec:
+      containers:
+        - name: notification-service-container
+          image: nginx:alpine
+
+          ports:
+            - containerPort: 80
+
+          resources:
+            requests:
+              memory: "64Mi"
+              cpu: "250m"
+
+            limits:
+              memory: "128Mi"
+              cpu: "500m"
