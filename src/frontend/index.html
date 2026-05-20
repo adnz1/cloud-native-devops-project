@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#0b0f14">
+
+    <title>ShopEase Dashboard</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <aside class="sidebar" aria-label="Primary">
+        <div class="sidebar-inner">
+            <div class="brand">
+                <h1 class="logo">ShopEase</h1>
+                <div class="dashboard-label">Dashboard</div>
+            </div>
+
+            <nav class="sidebar-nav" aria-label="Main navigation">
+                <ul class="nav-links" role="menu">
+                    <li role="none"><a role="menuitem" href="index.html">Home</a></li>
+                    <li role="none"><a role="menuitem" href="products.html">Products</a></li>
+                    <li role="none"><a role="menuitem" href="stats.html">Stats</a></li>
+                    <li role="none"><a role="menuitem" href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </aside>
+
+    <main id="main">
+        <section class="hero" aria-labelledby="hero-title">
+            <div class="container hero-content">
+                <h2 id="hero-title">Welcome to ShopEase</h2>
+                <p class="lead">Manage products, orders, and customers efficiently with our cloud-native e-commerce platform.</p>
+                <a class="btn btn-primary" href="#products">Explore Products</a>
+            </div>
+        </section>
+
+        <section id="products" class="products" aria-labelledby="products-title">
+            <div class="container">
+                <h2 id="products-title">Featured Products</h2>
+
+                <div class="product-container">
+                    <article class="card" tabindex="0">
+                        <h3>Laptop</h3>
+                        <p>High performance laptop for developers and professionals.</p>
+                    </article>
+
+                    <article class="card" tabindex="0">
+                        <h3>Smartphone</h3>
+                        <p>Latest smartphone with high quality camera and battery.</p>
+                    </article>
+
+                    <article class="card" tabindex="0">
+                        <h3>Headphones</h3>
+                        <p>Noise cancelling wireless headphones for music lovers.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="stats" class="stats" aria-labelledby="stats-title">
+            <div class="container stats-grid">
+                <h2 id="stats-title" class="visually-hidden">Statistics</h2>
+
+                <div class="stat-box">
+                    <p class="stat-number">1200+</p>
+                    <p class="stat-label">Orders Completed</p>
+                </div>
+
+                <div class="stat-box">
+                    <p class="stat-number">850+</p>
+                    <p class="stat-label">Active Users</p>
+                </div>
+
+                <div class="stat-box">
+                    <p class="stat-number">$50K+</p>
+                    <p class="stat-label">Revenue Generated</p>
+                </div>
+            </div>
+        </section>
+
+        <footer id="contact">
+            <div class="container footer-inner">
+                <p>© 2026 ShopEase. All Rights Reserved.</p>
+            </div>
+        </footer>
+    </main>
+
+</body>
+
+</html>
