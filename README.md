@@ -1,15 +1,15 @@
 # Cloud-Native Microservices DevOps Project
 
-## 📌 Project Overview
+##  Project Overview
 This project is a cloud-native e-commerce platform built using DevOps practices including CI/CD pipelines, Docker containerization, and Kubernetes orchestration.
 
 
-## 👨‍💻 Team Collaboration
+## Team Collaboration
 - Feature-based Git workflow used
 - Git Flow: develop, staging, production
 - Pull Requests used for all merges
 
-## 🏗️ Architecture
+## Architecture
 
 Services:
 - Frontend Service
@@ -21,14 +21,14 @@ Services:
 ## 🐳 Docker
 Each service is containerized using Docker.
 
-## ⚙️ CI/CD Pipeline
+## CI/CD Pipeline
 Implemented using GitHub Actions:
 - Build stage
 - Test stage
 - Docker image build
 - Automated deployment simulation
 
-## ☸️ Kubernetes
+## Kubernetes
 Kubernetes manifests include:
 - Deployments
 - Services
@@ -39,22 +39,22 @@ Kubernetes manifests include:
 - Autoscaling (HPA)
 - Rolling updates
 
-## 🌐 Environments
+## Environments
 - Development
 - Staging
 - Production
 
-## 🔐 Security
+## Security
 - Secrets used for sensitive data
 - ConfigMaps for environment variables
 
-## 📊 Features
+## Features
 - Microservices architecture
 - Container orchestration
 - Automated pipelines
 - Scalable deployment design
 
-## 🧠 Learning Outcome
+## Learning Outcome
 - Learned CI/CD automation
 - Docker containerization
 - Kubernetes orchestration
